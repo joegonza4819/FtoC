@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+   void FtoC(double);
+   double FtoC2(double);
+
+int main()
+
+{
+    double TempF, TempC;
+    cout << "Enter Temperature in F ==> ";
+    cin >> TempF;
+
+    
+    TempC = FtoC2(TempF);
+    cout << "The Temperature in Celsius using Func 2 is ===> " << TempC << endl;
+}
+
+    
+    void FtoC(double f)
+    {
+        double TempC = (f - 32) * 5/9;
+        cout << "The temperature in Celsius is ===> " << TempC << endl;
+    }
+    
+    double FtoC2(double f)
+    {
+        double TempC = (f - 32) * 5/9;
+        return TempC;
+    }
