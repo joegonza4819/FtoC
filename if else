@@ -12,15 +12,15 @@ int main()
     {
         cout << "It is super hot" << endl;
     }
-    else if(90 > temperature >= 75)
+    else if(temperature >= 75)
     {
         cout << "It is hot" << endl;
     }
-    else if(75 > temperature >= 50)
+    else if(temperature >= 50)
     {
         cout << "It is cool" << endl;
     }
-    else if(50 > temperature >= 35)
+    else if(temperature >= 35)
     {
         cout << "It is cold" << endl;
     }
