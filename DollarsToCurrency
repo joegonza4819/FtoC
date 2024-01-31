@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string DtoP(double);
+string DtoY(double);
+
+//String DtoP(double);
+//String DtoY(double);
+double MoneyD;
+string MoneyP, MoneyY;
+
+main()
+{
+    cout << "Enter your amount in Dollars ===> ";
+    cin >> MoneyD;
+    MoneyP = DtoP(MoneyD);
+    MoneyY = DtoY(MoneyD);
+    cout << MoneyY << endl;
+    cout << MoneyP;
+} 
+
+string DtoP(double d)
+{
+    double convert = d * 0.79;
+    string str = to_string(convert);
+    return "Your amount in British Pounds is: " + str;  
+}
+
+string DtoY(double d)
+{
+    double convert = d * 146.50;
+    string str = to_string(convert);
+    return "Your amount in Japanese Yen is: " + str;
